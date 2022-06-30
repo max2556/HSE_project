@@ -1,0 +1,16 @@
+.footer{
+    position: relative;
+    color:antiquewhite;
+
+
+    height: 33vh;
+    width: 100vw;
+    
+    background: #444;
+
+    box-sizing: border-box;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
