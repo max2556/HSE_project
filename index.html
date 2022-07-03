@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="welcome_section.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="info.css">
 </head>
 
 <body>
@@ -47,25 +48,42 @@
 
     </header>
 
-    <section class="welcome background-gradient">
-        <div class="wrapper chain-load">
-            <h1 class="title">Привет.</h1>
-            <p class="description">Мы - молодежная команда Высшей Школы Экономики</p>
-            <p class="description">Представляем вам проект...</p>
-        </div>
+    <section class="main">
+
+        <section class="welcome background-gradient">
+            <div class="wrapper chain-load">
+                <h1 class="title">Привет.</h1>
+                <p class="description">Мы - молодежная команда Высшей Школы Экономики</p>
+                <p class="description">Представляем вам проект...</p>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="map-holder">There will be map</div>
+            <div class="app"></div>
+        </section>
+
     </section>
 
-    <section class="info"></section>
-
-
     <footer class="footer">
-        <section>
-            <p>При поддержке Государственного Университета Аэрокосмического Приборостроения</p>
-            <p><img class="icon" src="" alt=""></p>
+        <section class="container">
+            <section class="SUAI">
+                <p>При поддержке Государственного Университета Аэрокосмического Приборостроения</p>
+                <p><img class="icon" src="" alt=""></p>
+            </section>
+            <section class="HSE">
+                <p>HSE</p>
+                <p><img class="icon" src="" alt=""></p>
+            </section>
+            <section class="Contacts">
+                <p>Связь: 88005553535</p>
+                <p><img class="icon" src="" alt=""></p>
+            </section>
         </section>
     </footer>
 
-    <script src="./main.js" defer></script>
+    <script type="module" src="./src/modules/transition-load.js"></script>
+    <script type="module" src="./src/main.js" defer></script>
 </body>
 
 </html>

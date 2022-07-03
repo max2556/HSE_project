@@ -1,16 +1,18 @@
 body {
-    width: 80vw;
-
-    box-sizing: content-box;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 0;
+    width: 100vw;
 
     margin: 0;
 
     font-family: 'Roboto', sans-serif;
 
     background: #333;
+}
+
+.main{
+    box-sizing: content-box;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 0;
 }
 
 h1{

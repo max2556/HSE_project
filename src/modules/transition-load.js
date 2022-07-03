@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', display_on_load);
-document.addEventListener('DOMContentLoaded', element_chain_load);
-function display_on_load(e) {
+console.log('Hello');
+
+export function display_on_load(e) {
     const selector = 'on-load-appear';
     const class_name = 'loaded';
     const objects = document.querySelectorAll('.' + selector);
@@ -8,18 +8,18 @@ function display_on_load(e) {
         obj.classList.replace(selector, class_name);
     }
 
-    const time = 700; //in milliseconds. Must be equal to loaded transition property
+    const time = 7000; //in milliseconds. Must be equal to loaded transition property
+    
+    /* 
     setTimeout(delete_loaded_flag.bind(this, objects, class_name), time);
-
-
-    function delete_loaded_flag(objects, class_name) {
+   function delete_loaded_flag(objects, class_name) {
         for (let obj of objects) {
             obj.classList.remove(class_name);
         }
-    }
+    }*/
 }
 
-function element_chain_load(e) {
+export function element_chain_load(e) {
     const time = 500;
     const class_name = 'chain-load';
     const loaded_class = 'loaded';
@@ -43,6 +43,5 @@ function element_chain_load(e) {
             setTimeout(chain_through_children.bind(this, child_array, i_new), time);
         }
     }
-
-
 }
+
